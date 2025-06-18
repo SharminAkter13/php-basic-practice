@@ -7,8 +7,8 @@
 </head>
 <body>
     <h1>My First PHP</h1>
-    <?php echo "Hello World";?>
-    <?php echo "Its Healing Now";?>
-    <?php echo "Stay Healthy & Happy";?>
+    <?php echo "❣❣ Hello World ❣❣";?> <br>
+    <?php echo "♣♣♣ Its Healing Now ♣♣♣";?> <br>
+    <?php echo "꧁ Stay Healthy & Happy ꧂";?><br>
 </body>
 </html>
