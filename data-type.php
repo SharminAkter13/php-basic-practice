@@ -54,7 +54,22 @@
     $array = array("fool", "bar", "hello", "world");
     var_dump($array);
     ?>
-        
+     
+     <h4>object</h4>
+     
+     <?php
+class food
+{
+    function do_food()
+    {
+        echo "Having food.";
+    }
+}
+
+$bf = new food;
+$bf->do_food();
+?>
+
 
 </body>
 </html>
