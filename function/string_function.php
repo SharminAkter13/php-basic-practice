@@ -24,10 +24,10 @@ function food(){
 echo food();
 echo "<br>";
 
-function foods_example(){ 
+function foods_examples(){ 
     return substr("Burger", 1, 3);
 }
-echo foods_example();
+echo foods_examples();
 echo "<br>";
 
 function f(){
