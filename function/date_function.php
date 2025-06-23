@@ -21,6 +21,7 @@
     echo date('l JS\of F Y h:i:s A';);
     echo "june 23,2025 is on a".date("l", mktime(0, 0, 0, 6, 23, 2025));
     echo date(DATE_RFC2822);
+    
     echo date(DATE_ATOM, mktime(0, 0, 0, 6, 23, 2025));
 
     ?>
