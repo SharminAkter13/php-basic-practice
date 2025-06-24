@@ -18,13 +18,19 @@
     // date(string $format, ?int $timestamp = null): string
     date_default_timezone_set('UTC');
     echo date('l');
-    echo date('l JS\of F Y h:i:s A';);
+    echo "<br>";
+    echo date('l jS\of F Y h:i:s A');
+    echo "<br>";
+
     echo "june 23,2025 is on a".date("l", mktime(0, 0, 0, 6, 23, 2025));
+    echo "<br>";
     echo date(DATE_RFC2822);
-    
+    echo "<br>";
     echo date(DATE_ATOM, mktime(0, 0, 0, 6, 23, 2025));
+    echo "<br>";
 
     ?>
-    
+
+    <h4>d</h4>
 </body>
 </html>
