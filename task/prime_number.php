@@ -7,19 +7,19 @@
     <h2>Check Prime Number</h2>
 
     <form method="post" action="">
-        Enter a number: <input type="number" name="num" min="1" required>
-        <input type="submit" name="submit" value="Check">
+        Enter a number: <input type="number" name="num"  required>
+        <input type="submit" name="submit" value="Submit">
     </form>
 
     <?php
-    if (isset($_POST['submit'])) {
+    if (isset($_POST['submit'])) { // isset() function check if a variable is set and is not null
         $num = $_POST['num'];
         $isPrime = true;
 
         if ($num <= 1) {
             $isPrime = false;
         } else {
-            for ($i = 2; $i <= sqrt($num); $i++) {
+            for ($i = 2; $i <= ($num); $i++) {
                 if ($num % $i == 0) {
                     $isPrime = false;
                     break;
