@@ -8,7 +8,7 @@
 
     <form method="post" action="">
         Enter a number: <input type="number" name="num" required>
-        <input type="submit" name="submit" value="Calculate">
+        <input type="submit" name="submit" value="Submit">
     </form>
 
     <?php
