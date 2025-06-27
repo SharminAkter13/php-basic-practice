@@ -36,7 +36,7 @@
     }
     ?>
 
-        //switch Statement
+        <!-- switch Statement -->
 
 <?php
     if (isset($_POST['submit'])) {
