@@ -7,32 +7,32 @@
     <h2>Grade Point Calculator</h2>
 
     <form method="post" action="">
-        Enter your mark: <input type="number" name="mark" min="0" max="100" required>
-        <input type="submit" name="submit" value="Get Grade Point">
+        Enter your result: <input type="number" name="result"  required>
+        <input type="submit" name="submit" value="Submit">
     </form>
 
     <?php
     if (isset($_POST['submit'])) {
-        $mark = $_POST['mark'];
-        $gradePoint = "";
+        $result = $_POST['result'];
+        $grade = "";
 
-        if ($mark >= 80 && $mark <= 100) {
-            $gradePoint = "5.00 (A+)";
-        } elseif ($mark >= 70) {
-            $gradePoint = "4.00 (A)";
-        } elseif ($mark >= 60) {
-            $gradePoint = "3.50 (A-)";
-        } elseif ($mark >= 50) {
-            $gradePoint = "3.00 (B)";
-        } elseif ($mark >= 40) {
-            $gradePoint = "2.00 (C)";
-        } elseif ($mark >= 33) {
-            $gradePoint = "1.00 (D)";
+        if ($result >= 80 && $result <= 100) {
+            $grade = "5.00 (A+)";
+        } elseif ($result >= 70) {
+            $grade = "4.00 (A)";
+        } elseif ($result >= 60) {
+            $grade = "3.50 (A-)";
+        } elseif ($result >= 50) {
+            $grade = "3.00 (B)";
+        } elseif ($result >= 40) {
+            $grade = "2.00 (C)";
+        } elseif ($result >= 33) {
+            $grade = "1.00 (D)";
         } else {
-            $gradePoint = "0.00 (F)";
+            $grade = "0.00 (F)";
         }
 
-        echo "<h3>Your Grade Point: $gradePoint</h3>";
+        echo "<h3>Your Grade Point is: $grade</h3>";
     }
     ?>
 </body>
