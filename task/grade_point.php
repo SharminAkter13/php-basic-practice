@@ -43,7 +43,7 @@
         $result = $_POST['result'];
         $grade = "";
 
-        // Convert score to grade group
+        
         switch (true) {
             case ($result >= 80 && $result <= 100):
                 $grade = "5.00 (A+)";
