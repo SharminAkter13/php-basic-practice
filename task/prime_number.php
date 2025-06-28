@@ -12,7 +12,8 @@
     </form>
 
     <?php
-    if (isset($_POST['submit'])) { // isset() function check if a variable is set and is not null
+    if (isset($_POST['submit'])) { 
+        // isset() function check if a variable is set and is not null;
         $num = $_POST['num'];
         $isPrime = true;
 
@@ -28,9 +29,9 @@
         }
 
         if ($isPrime) {
-            echo "<h3>$num is a Prime Number ✅</h3>";
+            echo "<h3> $num is a Prime Number</h3>";
         } else {
-            echo "<h3>$num is NOT a Prime Number </h3>";
+            echo "<h3> $num is NOT a Prime Number </h3>";
         }
     }
     ?>
