@@ -16,11 +16,11 @@
         Number Z:
         <input type="number" id="numZ" name="numZ" required><br><br>
 
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" name="submit">
     </form>
 
     <?php
-    
+    if (isset($_POST['submit'])) {
         $x = $_POST['numX'];
         $y = $_POST['numY'];
         $z = $_POST['numZ'];
@@ -35,7 +35,7 @@
         } else {
             echo "<p>The Largest Number is Z: <strong>$z</strong></p>";
         }
- 
+    }
     ?>
 </body>
 </html>
