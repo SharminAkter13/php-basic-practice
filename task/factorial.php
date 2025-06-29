@@ -12,19 +12,32 @@
     </form>
 
     <?php
-    if (isset($_POST['submit'])) {
+    // if (isset($_POST['submit'])) {
+    //     $num = $_POST['num'];
+    //     $factorial = 1;
+
+    //     if ($num < 0) {
+    //         echo "Factorial is not defined for negative numbers.";
+    //     } else {
+    //         for ($i = 1; $i <= $num; $i++) {
+    //             $factorial *= $i;
+    //         }
+    //         echo "<h3>Factorial of $num is: $factorial</h3>";
+    //     }
+    // }  //5 x 4 x 3 x 2 x 1 = 120; 
+    if(isset($_POST['submit'])){
         $num = $_POST['num'];
         $factorial = 1;
 
-        if ($num < 0) {
-            echo "Factorial is not defined for negative numbers.";
-        } else {
-            for ($i = 1; $i <= $num; $i++) {
+        if($num<0){
+            echo " Factorial is not define for negative numbers.";
+        }else{
+            for($i = 1;$i<= $num; $i++){
                 $factorial *= $i;
             }
             echo "<h3>Factorial of $num is: $factorial</h3>";
         }
-    }  //5 x 4 x 3 x 2 x 1 = 120; 
+    }
     ?>
 </body>
 </html>
