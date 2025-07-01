@@ -30,7 +30,7 @@ class Wdpf2 extends Wdpf{
     }
 }
 
-$info = new Wdpf();
+$info = new Wdpf2();
 echo $info-> topicName2();
 echo "<br>";
 // echo Student::studentValue(); //it will show error cause the function is not static
