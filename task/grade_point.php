@@ -12,26 +12,47 @@
     </form>
 
     <?php
-    if (isset($_POST['submit'])) {
-        $result = $_POST['result'];
-        $grade = "";
+    // if (isset($_POST['submit'])) {
+    //     $result = $_POST['result'];
+    //     $grade = "";
 
-        if ($result >= 80 && $result <= 100) {
-            $grade = "5.00 (A+)";
-        } elseif ($result >= 70) {
-            $grade = "4.00 (A)";
-        } elseif ($result >= 60) {
-            $grade = "3.50 (A-)";
-        } elseif ($result >= 50) {
-            $grade = "3.00 (B)";
-        } elseif ($result >= 40) {
-            $grade = "2.00 (C)";
-        } elseif ($result >= 33) {
-            $grade = "1.00 (D)";
-        } else {
-            $grade = "0.00 (F)";
+    //     if ($result >= 80 && $result <= 100) {
+    //         $grade = "5.00 (A+)";
+    //     } elseif ($result >= 70) {
+    //         $grade = "4.00 (A)";
+    //     } elseif ($result >= 60) {
+    //         $grade = "3.50 (A-)";
+    //     } elseif ($result >= 50) {
+    //         $grade = "3.00 (B)";
+    //     } elseif ($result >= 40) {
+    //         $grade = "2.00 (C)";
+    //     } elseif ($result >= 33) {
+    //         $grade = "1.00 (D)";
+    //     } else {
+    //         $grade = "0.00 (F)";
+    //     }
+
+    //     echo "<h3>Your Grade Point is: $grade</h3>";
+    // }
+    if(isset($_POST['submit'])){
+        $result =$_POST['result'];
+        $grade ="";
+
+        if($result>=80 && $result<=100){
+            $grade ="5.00 (A+)";
+        } elseif($result>=70 ){
+            $grade ="4.00 (A)";
+        } elseif($result>=60 ){
+            $grade ="3.50 (A-)";
+        } elseif($result>=50 ){
+            $grade ="3.00 (B)";
+        } elseif($result>=40 ){
+            $grade ="2.00 (C)";
+        } if($result>=33 ){
+            $grade ="1.00 (D)";
+        }else{
+            $grade ="0.00 (F)";
         }
-
         echo "<h3>Your Grade Point is: $grade</h3>";
     }
     ?>
