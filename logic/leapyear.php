@@ -8,7 +8,7 @@
 
     <form method="post" action="">
         Enter a year: <input type="number" name="year" required>
-        <input type="submit" name="submit" value="Check">
+        <input type="submit" name="submit" value="Submit ">
     </form>
 
     <?php

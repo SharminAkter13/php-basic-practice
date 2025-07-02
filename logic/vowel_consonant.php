@@ -8,7 +8,7 @@
 
     <form method="post" action="">
         Enter a string: <input type="text" name="text" required>
-        <input type="submit" name="submit" value="Count">
+        <input type="submit" name="submit" value="Submit">
     </form>
 
     <?php
